@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>559</width>
-    <height>318</height>
+    <width>560</width>
+    <height>321</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -62,7 +62,7 @@
      <bool>true</bool>
     </property>
     <property name="placeholderText">
-     <string>Enter your characters here...</string>
+     <string>Enter your seperated characters here...</string>
     </property>
     <property name="cursorMoveStyle">
      <enum>Qt::LogicalMoveStyle</enum>
@@ -75,9 +75,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>5</y>
+      <y>-6</y>
       <width>531</width>
-      <height>20</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -104,8 +104,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>80</y>
+      <x>210</x>
+      <y>83</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -117,7 +117,7 @@
      <string>Shortcut : Enter</string>
     </property>
     <property name="statusTip">
-     <string>Click to change number you entered</string>
+     <string>Click to go</string>
     </property>
     <property name="whatsThis">
      <string/>
@@ -133,16 +133,16 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>120</y>
-      <width>541</width>
-      <height>151</height>
+      <y>150</y>
+      <width>540</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="cursor" stdset="0">
      <cursorShape>IBeamCursor</cursorShape>
     </property>
     <property name="statusTip">
-     <string>Reasults</string>
+     <string>Results</string>
     </property>
     <property name="styleSheet">
      <string notr="true">color:white ; align:&quot;center&quot;;font-size:14px;</string>
@@ -164,9 +164,9 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_Error">
     <property name="geometry">
      <rect>
-      <x>12</x>
-      <y>63</y>
-      <width>351</width>
+      <x>147</x>
+      <y>62</y>
+      <width>271</width>
       <height>16</height>
      </rect>
     </property>
@@ -176,6 +176,110 @@ p, li { white-space: pre-wrap; }
     <property name="text">
      <string/>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>120</y>
+      <width>535</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>83</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Shortcut : CTRL + C</string>
+    </property>
+    <property name="statusTip">
+     <string>Click to cancel</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color :#B8860B; color: black</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox3">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>64</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3 letters</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox4">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>77</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4 letters</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxMore">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>90</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5 or more</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -183,13 +287,57 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>559</width>
+     <width>560</width>
      <height>20</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFlie">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFlie"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>checkBox3</tabstop>
+  <tabstop>checkBox4</tabstop>
+  <tabstop>checkBoxMore</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>textBrowser</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
