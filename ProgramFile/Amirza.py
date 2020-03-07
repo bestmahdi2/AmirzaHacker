@@ -106,4 +106,4 @@ class AmirzaClass:
 #         answers.append(i)
 #
 # print(answers)
-
+# print(cla.ultimListO)
