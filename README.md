@@ -1,6 +1,4 @@
 # AmirzaHacker
-<<<<<<< HEAD
-=======
 Python program with GUI to examine all possible answers for Amirza and similar Games
 
 این یک برنامه گرافیکی برای پیدا کردن تمامی حالت های ممکن جواب بازی هایی مثل آمیرزا است.
@@ -38,5 +36,3 @@ To convert py file to executable in windows and linux use command like below (in
 To convert ui file to py use below:
 > cd ProgramFile
 > Pyuic5 -x -o Amirza_ui.py Amirza_ui.ui
-
->>>>>>> d2d9075877ba60ca1ae868a6f35bdb45675e75a1
