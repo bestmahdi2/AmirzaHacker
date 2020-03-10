@@ -1,7 +1,7 @@
 # AmirzaHacker
 This is a python program with GUI to examine all possible answers for Amirza and similar Games
 
-این یک برنامه گرافیکی برای پیدا کردن تمامی حالت های ممکن جواب بازی هایی مثل آمیرزا است
+این یک برنامه پایتون با ظاهر گرافیکی برای پیدا کردن تمامی حالت های ممکن جواب بازی هایی مثل آمیرزا است
 
 ***
 If your not a developer just download the RAR file in Releases(Github), extract it and open the compiler.exe
@@ -33,7 +33,7 @@ Amirza_virgool.py : simplified version of Amirza.py (won't work with compiler.py
 
 #Notice:
 
-To convert py file to executable in windows and linux use command like below (in cmd,powershell,terminal or similar):
+To convert py file to executable in windows and linux use these commands (in cmd,powershell,terminal or similar):
 > cd Amirza
 
 > pyinstaller --onefile --noconsole --icon='.\ProgramFile\Pirate Icon 21.ico' .\compiler.py
