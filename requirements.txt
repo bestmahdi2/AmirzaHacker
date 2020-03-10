@@ -1,0 +1,4 @@
+Python3.* >= 3.5
+Pyinstaller
+PyQt5
+PyQt5-tools

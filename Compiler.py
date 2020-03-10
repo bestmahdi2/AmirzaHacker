@@ -11,7 +11,7 @@ class MainClass(Ui_MainWindow):         # inheritate from Ui_MainWindow
     def setupUi(self, MainWindow):
         super().setupUi(MainWindow)         # run the original codes in setupUi
         self.cancel = "false"           # for clicking on the cancel button
-        self.num = 0 #
+        self.num = 0
 
     def retranslateUi(self, MainWindow):
         super().retranslateUi(MainWindow)
@@ -24,7 +24,7 @@ class MainClass(Ui_MainWindow):         # inheritate from Ui_MainWindow
 
     def checkbox_checker_func(self):
         self.num = 0
-        check3 = self.checkBox3.isChecked()                 # if checkbox3 is checked check3 is True else is False
+        check3 = self.checkBox3.isChecked()                 # if checkbox3 is checked ,check3 is True  , else is False
         check4 = self.checkBox4.isChecked()
         check5 = self.checkBoxMore.isChecked()
 
