@@ -1,18 +1,18 @@
 # AmirzaHacker
-Python program with GUI to examine all possible answers for Amirza and similar Games
+This is a python program with GUI to examine all possible answers for Amirza and similar Games
 
 این یک برنامه گرافیکی برای پیدا کردن تمامی حالت های ممکن جواب بازی هایی مثل آمیرزا است
 
 ***
-If your not a developer just download the RAR file, extract it and open the compiler.exe
+If your not a developer just download the RAR file in Releases(Github), extract it and open the compiler.exe
 
-اگر برنامه نویس نیستید فقط فایل رار رو دانلود کنید و بعد از اسختراج فایل اجرایی را باز کنید
+اگر برنامه نویس نیستید ، در قسمت ریلیزیز در سایت گیت هاب فایل رار رو دانلود کنید و بعد از اسختراج فایل اجرایی را باز کنید
 ****
 If you came for just-python-script in Virgool , you can find it in ProgramFile\Amirza_virgool.py
 
 اگر برای قسمت فقط-پایتون مقاله سایت ویرگول آمدید ، در پوشه پروگرام فایل ، آمیرزا_ویرگول را دانلود کنید 
 ***
-Otherwise, you may want to translate Persian letters with yours and replace Moin.db with the English words database.
+Otherwise, you may want to translate Persian letters with yours and replace Moin.db with the Your-language words database.
 
 /Main directory/
 
