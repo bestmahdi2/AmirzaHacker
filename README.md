@@ -31,7 +31,7 @@ Amirza.py: main program.
 
 Amirza_virgool.py : simplified version of Amirza.py (won't work with compiler.py in main directory) 
 
-##Notice:
+## Notice:
 
 To convert py file to executable in windows and linux use these commands (in cmd,powershell,terminal or similar):
 > cd Amirza
