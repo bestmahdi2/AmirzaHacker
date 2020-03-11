@@ -4,9 +4,9 @@ This is a python program with GUI to examine all possible answers for Amirza and
 این یک برنامه پایتون با ظاهر گرافیکی برای پیدا کردن تمامی حالت های ممکن جواب بازی هایی مثل آمیرزا است
 
 ***
-If your not a developer just download the RAR file in Releases(Github), extract it and open the compiler.exe
+If your not a developer just download the RAR file in Release(Github), extract it and open the compiler.exe
 
-اگر برنامه نویس نیستید ، در قسمت ریلیزیز در سایت گیت هاب فایل رار رو دانلود کنید و بعد از اسختراج فایل اجرایی را باز کنید
+اگر برنامه نویس نیستید ، در قسمت ریلیز در سایت گیت هاب فایل رار رو دانلود کنید و بعد از اسختراج فایل اجرایی را باز کنید
 ****
 If you came for just-python-script in Virgool , you can find it in ProgramFile\Amirza_virgool.py
 
