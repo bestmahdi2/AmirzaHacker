@@ -33,6 +33,7 @@ Amirza_virgool.py : simplified version of Amirza.py (won't work with compiler.py
 
 ## How to use:
 Type some Persian characters and seperate them with space character like : (گ و ا ت ه)
+
 برای استفاده ، حروف فارسی مورد نظر را با کاراکتر فاصله از هم جدا و وارد کنید ، مثل : گ و ا ت ه
 
 ## Notice:
