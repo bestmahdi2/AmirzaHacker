@@ -42,12 +42,20 @@ class MainClass(Ui_MainWindow):         # inheritate from Ui_MainWindow
         if check3 == True or check4 == True or check5 == True:              # go to next function if at least one of checkboxes is  checked
             self.empty_entrance_func()
 
+##
+    def empty_entrance_func(self):
+        text = self.lineEdit.text()
+        text = text.replace("  "," ").replace("   "," ").replace("    "," ")
+        if text == "" or text ==" ":
+            self.label_Error.setText("Empty entrance")
+        else:
+            self.pushB_clicked()
+
     def language_checker_func(self):
         persian = ["ا", "آ", "ب", "پ", "ت", "ث", "ج", "چ", "ح", "خ", "د", "ذ", "ر", "ز", "ژ", "س", "ش", "ص", "ض", "ط",
                    "ظ", "ع", "غ", "ف", "ق", "ک", "گ", "ل", "ن", "و", "ه", "ی", "م", " "]
         text = self.lineEdit.text()         # get the text in the lineEdit
         textlist = text.split()         # split them and make a list
-
         Counter = 0
         while 0 <= Counter < len(textlist):
             if textlist[Counter] not in persian:
@@ -62,14 +70,6 @@ class MainClass(Ui_MainWindow):         # inheritate from Ui_MainWindow
                 QtWidgets.QApplication.processEvents()
                 Counter += 1
 
-
-    def empty_entrance_func(self):
-        text = self.lineEdit.text()
-        text = text.replace("  "," ").replace("   "," ").replace("    "," ")
-        if text == "" or text ==" ":
-            self.label_Error.setText("Empty entrance")
-        else:
-            self.pushB_clicked()
 
     def pushB_clicked(self):
         self.cancel = "false"

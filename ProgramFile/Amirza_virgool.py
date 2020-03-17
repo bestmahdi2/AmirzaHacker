@@ -5,21 +5,21 @@ import sqlite3
 class AmirzaClass:
     def amirzafunc(self, text):
         textlist = text.replace("-", " ").replace("  ", " ").split(" ")
-        x = 3
+        char = 3
         i = 0
 
         lister = ["default", "default", "default", "default", "default", "default", "default"]
 
-        while  x <= len(textlist):
-            lister[i] = (list(permutations(textlist, x)))
-            x += 1
+        while  char <= len(textlist):
+            lister[i] = (list(permutations(textlist, char)))
+            char += 1
             i += 1
 
         lister_new = []
 
-        for i in lister:
-            if i != "default" :
-                lister_new.append(i)
+        for data in lister:
+            if data != "default" :
+                lister_new.append(data)
 
         self.ultimList = []
 

@@ -27,8 +27,8 @@ class AmirzaClass:
 
         if number == 4:
             while char <= number:
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
 
         if number == 5:
             char = 5
@@ -51,14 +51,14 @@ class AmirzaClass:
                 char += 1
                 i += 1
             char = 5
-            while 4 < x <= len(textlist):
+            while 4 < char <= len(textlist):
                 lister[i] = (list(permutations(textlist, char)))
                 char += 1
                 i += 1
 
         if number == 9:
             char = 4
-            while 4 <= x < 5:
+            while 4 <= char < 5:
                 lister[i] = (list(permutations(textlist, char)))
                 char += 1
                 i += 1
@@ -72,7 +72,7 @@ class AmirzaClass:
         # make a new list for answers
         for data in lister:
             if data != "default" and data != "defaultdefault":
-                lister_new.append(i)
+                lister_new.append(data)
 
         self.ultimList = []
         # join the letters to make words
