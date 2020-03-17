@@ -47,14 +47,21 @@ class MainClass(Ui_MainWindow):         # inheritate from Ui_MainWindow
                    "ظ", "ع", "غ", "ف", "ق", "ک", "گ", "ل", "ن", "و", "ه", "ی", "م", " "]
         text = self.lineEdit.text()         # get the text in the lineEdit
         textlist = text.split()         # split them and make a list
-        for i in textlist:
-            if i not in persian:
+
+        Counter = 0
+        while 0 <= Counter < len(textlist):
+            if textlist[Counter] not in persian:
                 self.label_Error.setStyleSheet("color:red")
                 self.label_Error.setText("Incorrect entrance")
-                self.pushButton.setEnabled(False)           # disable the pushbutton
+                self.pushButton.setEnabled(False)   # disable the pushbutton
+                QtWidgets.QApplication.processEvents()
+                break
             else:
                 ui.label_Error.setText("")
                 ui.pushButton.setEnabled(True)
+                QtWidgets.QApplication.processEvents()
+                Counter += 1
+
 
     def empty_entrance_func(self):
         text = self.lineEdit.text()

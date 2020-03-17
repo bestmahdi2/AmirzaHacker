@@ -5,7 +5,7 @@ import sqlite3
 class AmirzaClass:
     def amirzafunc(self, text, number):             # number is the value of checkboxes which user check
         textlist = text.replace("-", " ").replace("  ", " ").split(" ")             # change string to list
-        x = 3           # we want words with more than 3 characters
+        char = 3           # we want words with more than 3 characters
         i = 0           # counter
 
         # answer keeper:
@@ -15,63 +15,63 @@ class AmirzaClass:
         if number == 12:
             # it make all possible words with letters that entered ,
             # from 3 letters in a word till the length of the string that entered in a word
-            while x <= len(textlist):
-                lister[i] = (list(permutations(textlist, x)))
+            while char <= len(textlist):
+                lister[i] = (list(permutations(textlist, char)))
                 i += 1
-                x += 1
+                char += 1
 
         if number == 3:
-            while x <= number:
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+            while char <= number:
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
 
         if number == 4:
-            while x <= number:
+            while char <= number:
                 lister[i] = (list(permutations(textlist, x)))
                 x += 1
 
         if number == 5:
-            x = 5
-            while x <= len(textlist):
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+            char = 5
+            while char <= len(textlist):
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
                 i += 1
 
         # 3 and 4 checked
         if number == 7:
-            while 3 <= x <= 4:
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+            while 3 <= char <= 4:
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
                 i += 1
 
         # 3 and 5 checked but 4 not checked
         if number == 8:
-            while 3 <= x < 4:
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+            while 3 <= char < 4:
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
                 i += 1
-            x = 5
+            char = 5
             while 4 < x <= len(textlist):
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
                 i += 1
 
         if number == 9:
-            x = 4
+            char = 4
             while 4 <= x < 5:
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
                 i += 1
-            while 5 <= x <= len(textlist):
-                lister[i] = (list(permutations(textlist, x)))
-                x += 1
+            while 5 <= char <= len(textlist):
+                lister[i] = (list(permutations(textlist, char)))
+                char += 1
                 i += 1
 
         lister_new = []
 
         # make a new list for answers
-        for i in lister:
-            if i != "default" and i != "defaultdefault":
+        for data in lister:
+            if data != "default" and data != "defaultdefault":
                 lister_new.append(i)
 
         self.ultimList = []
