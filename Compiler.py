@@ -1,4 +1,5 @@
-from PyQt5 import QtWidgets, QtCore
+from os import sep
+from PyQt5 import QtWidgets, QtCore,QtGui
 from ProgramFile.Amirza import AmirzaClass
 from ProgramFile.Amirza_ui import Ui_MainWindow
 
@@ -10,8 +11,16 @@ QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
 class MainClass(Ui_MainWindow):         # inheritate from Ui_MainWindow
     def setupUi(self, MainWindow):
         super().setupUi(MainWindow)         # run the original codes in setupUi
+
+# region icon
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ProgramFile"+sep+"Logo1.png"), QtGui.QIcon.Selected, QtGui.QIcon.On)
+        MainWindow.setWindowIcon(icon)
+# endregion
+
         self.cancel = "false"           # for clicking on the cancel button
         self.num = 0
+
 
     def retranslateUi(self, MainWindow):
         super().retranslateUi(MainWindow)
