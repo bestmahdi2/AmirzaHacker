@@ -1,51 +1,25 @@
 # AmirzaHacker
-This is a python program with GUI to examine all possible answers for Amirza and similar Games
+This is a python program with GUI to examine all answers for Amirza and similar Games
 
 این یک برنامه پایتون با ظاهر گرافیکی برای پیدا کردن تمامی حالت های ممکن جواب بازی هایی مثل آمیرزا است
 
 ***
-If your not a developer just download the **AmirzaHacker.rar** in **Release(Github)**, extract it and open the *compiler.exe*
+If you're not a developer, download the **AmirzaHacker.rar** in **Release(GitHub)**, extract it and open the *compiler.exe*
 
 اگر برنامه نویس نیستید ، در قسمت **ریلیز** در سایت گیت هاب **فایل رار** رو دانلود کنید و بعد از اسختراج *فایل اجرایی* را باز کنید
 ****
-If you came for just-python-script in Virgool , you can find it in ProgramFile\Amirza_virgool.py
+If you came for only-python-script in Virgool, you can find it in ProgramFile\Amirza_virgool.py
 
 اگر برای قسمت فقط-پایتون مقاله سایت ویرگول آمدید ، در پوشه پروگرام فایل ، آمیرزا_ویرگول را دانلود کنید 
 ***
-Otherwise, you may want to translate Persian letters with yours and replace Moin.db with the Your-language words database.
+Otherwise, translate Persian letters with yours and replace Moin.db with Your-language words database.**/Main directory/**
 
-**/Main directory/**
+Compiler.py: a script to connect python to Qt, and a little smarter. Moin.db: Persian words database.**/Programfiles/**
 
-Compiler.py: just a script to connect python to Qt, and a little smarter.
+Amirza_ui.ui: GUI designed with PyQt5 designer. Amirza_ui.py: generated from the UI file. Amirza.py: main program. Amirza_virgool.py: a simplified version of Amirza.py (won't work with compiler.py in the main directory) CMD, PowerShell, terminal or similar):pyinstaller --OneFile --noconsole --icon='.\ProgramFile\Pirate Icon 21.ico' .\compiler.py
 
-Moin.db: Persian words database.
+To convert UI file to py use below: ProgramFile
 
-
-**/Programfiles/**
-
-Amirza_ui.ui: GUI designed with PyQt5 designer.
-
-Amirza_ui.py: generated from the UI file.
-
-Amirza.py: main program.
-
-Amirza_virgool.py : simplified version of Amirza.py (won't work with compiler.py in main directory) 
-
-## How to use:
-Type some Persian characters and seperate them with space character like : (گ و ا ت ه)
-
-برای استفاده ، حروف فارسی مورد نظر را با کاراکتر فاصله از هم جدا و وارد کنید ، مثل : گ و ا ت ه
-
-## Notice:
-
-To convert py file to executable in windows and linux use these commands (in cmd,powershell,terminal or similar):
-> cd Amirza
-
-> pyinstaller --onefile --noconsole --icon='.\ProgramFile\Pirate Icon 21.ico' .\compiler.py
-
-To convert ui file to py use below:
-> cd ProgramFile
-
-> Pyuic5 -x -o Amirza_ui.py Amirza_ui.ui
+&gt; Pyuic5 -x -o Amirza_ui.py Amirza_ui.ui
 
 ![Program Logo](/ProgramFile/Logo.png)
