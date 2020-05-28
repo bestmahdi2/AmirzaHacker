@@ -14,7 +14,7 @@ class MainClass(Ui_MainWindow):         # inheritate from Ui_MainWindow
 
 # region icon
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ProgramFile"+sep+"Logo1.png"), QtGui.QIcon.Selected, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap("spy.ico"), QtGui.QIcon.Selected, QtGui.QIcon.On)
         MainWindow.setWindowIcon(icon)
 # endregion
 
